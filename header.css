@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.menu-icon{
+    max-width: 4rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+nav{
+    background-color: black;
+    padding: 1rem;
+    
+}
+
+.head{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.web-logo{
+    color: aliceblue;
+}
+
+.web-logo img{
+    max-width: 20rem;
+    float: right;
+}
+.search-icon{
+    stroke: aliceblue;
+    max-width: 4rem;
+    float: right;
+}
+
+.account-icon{
+    stroke: aliceblue;
+    max-width: 4rem;
+    float: right;
+    padding-right: 1rem;
+}
+
+.nav-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.accout{
+    padding-left: -2rem;
+}
+
+main{
+    background-color: rgba(rgb(191, 191, 191, 0.2));
+}
+
