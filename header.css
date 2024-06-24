@@ -26,6 +26,13 @@ nav{
     align-items: center;
 }
 
+.head{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.479);
+    border-top: 2px solid rgba(255, 255, 255, 0.479);
+    padding: 1rem;
+    margin: 0;
+}
+
 .web-logo{
     color: aliceblue;
 }
