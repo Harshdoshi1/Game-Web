@@ -1,0 +1,66 @@
+
+h3{
+    color: aliceblue;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.mail{
+    stroke: white;
+    max-width: 2rem;
+    float: right;
+}
+
+.mail-harsh{
+    display: grid;
+    padding-left: 0rem;
+    grid-template-columns: 1fr;
+    float: left;
+}
+
+p{
+    color: white;
+}
+
+p:hover{
+    color: rgb(77, 77, 186);
+}
+
+.mail-doshi{
+    padding-left: 1rem;
+}
+
+.call-harsh{
+    stroke: white;
+    max-width: 2rem;
+    float: right;
+}
+
+.mail-spicy{
+    display: grid;
+    padding-left: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mail-spicy p{
+    float: left;
+}
+
+.mail-c{
+    display: grid;
+    padding-left: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mail-c p{
+    float: left;
+}
+
+.insta{
+    stroke: white;
+    color: white;
+}
