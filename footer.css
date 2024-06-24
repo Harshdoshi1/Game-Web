@@ -61,6 +61,11 @@ p:hover{
 }
 
 .insta{
-    stroke: white;
-    color: white;
+    max-width: 2rem;
+    float: right;
+}
+
+.linkedin{
+    max-width: 2rem;
+    float: right;
 }
