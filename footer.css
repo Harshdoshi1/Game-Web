@@ -20,6 +20,8 @@ h3{
     padding-left: 0rem;
     grid-template-columns: 1fr;
     float: left;
+    align-items: center;
+    justify-content: center;
 }
 
 p{
@@ -44,6 +46,7 @@ p:hover{
     display: grid;
     padding-left: 1rem;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .mail-spicy p{
@@ -54,6 +57,7 @@ p:hover{
     display: grid;
     padding-left: 1rem;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .mail-c p{
@@ -68,4 +72,17 @@ p:hover{
 .linkedin{
     max-width: 2rem;
     float: right;
+}
+
+.footer{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.479);
+    border-top: 2px solid rgba(255, 255, 255, 0.479);
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+}
+
+.follow{
+    display: grid;
+    justify-content: left;
 }

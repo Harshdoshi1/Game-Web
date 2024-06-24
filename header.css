@@ -9,7 +9,7 @@ html{
 }
 
 .menu-icon{
-    max-width: 4rem;
+    max-width: 3rem;
     color: aliceblue;
     cursor: pointer;
 }
@@ -44,27 +44,30 @@ nav{
 }
 .search-icon{
     stroke: aliceblue;
-    max-width: 4rem;
+    max-width: 3rem;
     float: right;
+    padding-right: 1rem;
+
 }
 
 .account-icon{
     stroke: aliceblue;
-    max-width: 4rem;
+    max-width: 3rem;
     float: right;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 
 .nav-2{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
+/*
 .accout{
     padding-left: -2rem;
-}
+} */
 
 main{
     background-color: rgba(rgb(191, 191, 191, 0.2));
 }
 
+ 
