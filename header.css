@@ -20,6 +20,31 @@ nav{
     
 }
 
+header a{
+    color: rgb(0, 0, 0);
+}
+
+.head{
+    position: relative;
+}
+
+.dropdown{
+    position: absolute;
+    padding: 1rem;
+    background-color: aliceblue;
+    top: 100%;
+}
+
+.dropdown a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 3rem;
+    align-items: center;
+    border: 1px solid black;
+    width: 15rem;
+}
+
 .head{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
