@@ -16,41 +16,44 @@
         <nav>
             <div class="head">
 
-                <div class="meni">
-                    <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="menu-icon">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                    </button>
-                    <a>downloads</a>                  
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu()" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="menu-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                
+                <div class="dropdown" id="subMenu">
+                    <a href="#">downloads</a><br>
+                    <a href="#">feedback</a><br>
+                    <a href="#">popular games</a>
                 </div>
+           
                 
                 <div class="web-logo">
                     <a href="#">
                         <img src="Spicy-Games2.png">
                     </a>
                 </div>
-
-                <div>
-
-                </div>
-
-                <div class="nav-2">
-                    <div>
+                
+                    <div class="search-input">
                         <a href="#">
+                            
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="search-icon">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                        </svg>                          
+                        </svg>
+                        
+                        <div class="input">
+                            <input id="myiput">
+                        </div>
                         </a>
+
                     </div>
 
                     <div class="accout">
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="account-icon">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                            </svg>        
+                            </svg>   
                         </a>
-                    </div>
-                </div>
+                    </div>         
 
             </div>
         </nav>
@@ -206,8 +209,8 @@
 
               <div class="pagination">
                 <a href="index.html"><</a>
-                <a href="index.html">1</a>
-                <a href="page2.html" class="active">2</a>
+                <a href="index.html" class="active">1</a>
+                <a href="page2.html">2</a>
                 <a href="page2.html">></a>
               </div>
 

@@ -132,3 +132,84 @@ main{
     background-color: rgba(rgb(191, 191, 191, 0.2));
 }
     
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  header body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #83c5be;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .fancy {
+    position: absolute;
+    width: 470px;
+    height: 35px;
+    max-height: 0%;
+    background: #edf6f9;
+    border-radius: 50px;
+    overflow: hidden;
+    --offset: 3px;
+    margin-left: 60px;
+  }
+
+  .fancy.open-search{
+    position: absolute;
+    width: 470px;
+    height: 35px;
+    max-height: 100%;
+    background: #edf6f9;
+    border-radius: 50px;
+    overflow: hidden;
+    --offset: 3px;
+    margin-left: 60px;
+  }
+  
+  .fancy::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    background: conic-gradient(transparent 180deg, #770000, #00ff08);
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1;
+    animation: rotate 2s linear infinite;
+  }
+  
+  .fancy::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 2 * var(--offset));
+    height: calc(100% - 2 * var(--offset));
+    inset: var(--offset);
+    background: inherit;
+    border-radius: inherit;
+  }
+  
+  .fancy input {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    font-size: 1rem;
+    inset: 0;
+    padding: 1.5rem;
+    z-index: 10;
+    font-size: 2rem;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+    }
+    to {
+      transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+    }
+  }
+  
