@@ -16,11 +16,11 @@
         <nav>
             <div class="head">
 
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu()" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="menu-icon">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
                 
-                <div class="dropdown">
+                <div class="dropdown" id="subMenu">
                     <a href="#">downloads</a><br>
                     <a href="#">downloads</a><br>
                     <a href="#">downloads</a>
@@ -33,18 +33,21 @@
                     </a>
                 </div>
 
-                <div>
-
-                </div>
-
-                <div class="nav-2">
-                    <div>
+                
+                    <div class="search-input">
                         <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="search-icon">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                        </svg>                          
+                        </svg>
+                        
+                        <div class="input">
+                            <input>
+                        </div>
                         </a>
+
                     </div>
+
+                
 
                     <div class="accout">
                         <a href="#">
@@ -53,7 +56,7 @@
                             </svg>        
                         </a>
                     </div>
-                </div>
+                
 
             </div>
         </nav>
