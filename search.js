@@ -8,80 +8,80 @@ const Games = [
     {
         id: 0,
         image: 'BGMIMOB.png',
-        title: 'Z Flip Foldable Mobile',
-        price: 120,
+        title: 'bgmi',
+        
     },
     {
         id: 1,
         image: 'BRAWLSTARS.png',
-        title: 'Air Pods Pro',
-        price: 60,
+        title: 'brawl stars',
+        
     },
     {
         id: 2,
         image: 'CANDYCRUSH.png',
-        title: '250D DSLR Camera',
-        price: 230,
+        title: 'candy crush',
+        
     },
     {
         id: 3,
         image: 'CLASHROYAL.png',
-        title: 'Headphones',
-        price: 100,
+        title: 'clashh royal',
+        
     },
     {
         id: 4,
         image: 'FCMOBILE.png',
-        title: 'Audio Microphone',
-        price: 230,
+        title: 'fc mobile',
+        
     },
     {
         id: 5,
         image: 'CODMMOB.png',
-        title: 'Smart Watch',
-        price: 100,
+        title: 'cod',
+        
     },
     {
         id: 6,
         image: 'GTAV.png',
-        title: 'Smart Watch',
-        price: 100,
+        title: 'gtav',
+        
     },
     {
         id: 7,
         image: 'GTASAN.png',
-        title: 'Smart Watch',
-        price: 100,
+        title: 'gta sanandreas',
+        
     },
     {
         id: 8,
         image: 'GTAVICE.png',
-        title: 'Smart Watch',
-        price: 100,
+        title: 'gta vice',
+        
     },
     {
         id: 9,
         image: 'SUBWAY.png',
-        title: 'Smart Watch',
-        price: 100,
+        title: 'subway surfers',
+        
     },
     {
         id: 10,
         image: 'FREEFIRE.png',
-        title: 'Smart Watch',
-        price: 100,
+        title: 'freefire',
+        
     },
     {
         id: 11,
         image: 'COC.png',
-        title: 'Smart Watch',
-        price: 100,
+        title: 'coc',
+        
     },
 ];
 
 const categories = [...new Set(Games.map((item) => { return item }))]
 
-document.getElementById('searchBar').addEventListener('keyup', (e) => {
+document.getElementById('search').addEventListener('keyup', (e) => {
     const searchData = e.target.value.toLowerCase();
     const filteredData = categories.filter((item) => {
         return (
@@ -92,19 +92,31 @@ document.getElementById('searchBar').addEventListener('keyup', (e) => {
 });
 
 const displayItem = (items) => {
-    document.getElementById('root').innerHTML = items.map((item) => {
-        var { image, title, price } = item;
+    document.getElementById('games').innerHTML = items.map((item) => {
+        var { image, title } = item;
         return (
-            `<div class='box'>
-                <div class='img-box'>
-                    <img class='images' src=${image}></img>
-                </div> 
-                <div class='bottom'>
-                    <p>${title}</p>
-                    <h2>$ ${price}.00</h2>
-                <button>Add to cart</button>
+            // `<div class='box'>
+            //     <div class='img-box'>
+            //         <img class='images' src=${image}></img>
+            //     </div> 
+            //     <div class='bottom'>
+            //         <p>${title}</p>
+            //         <h2>$ ${price}.00</h2>
+            //     <button>Add to cart</button>
+            //     </div>
+            // </div>`
+
+            `
+            <div class="game-container">
+                <div class="container">
+                    <div class="card">
+                        <img src=${image}
+                            alt="Image 1">
+                        <p>${title}</p>
+                    </div>
                 </div>
-            </div>`
+            </div>
+            `
         )
     }).join('')
 };

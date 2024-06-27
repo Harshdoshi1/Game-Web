@@ -136,20 +136,51 @@ header{
 }
 
 .container {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     justify-content: space-between;
     width: 80%;
     gap: 1rem;
-
 }
+
+.games {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  width: 80%;
+  margin-left: 10%;
+  gap: 1rem;
+}
+.game-card {
+  width: 5rem;
+  padding: 0;
+}
+
+.game-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  /* width: 80%; */
+  /* margin: 10%; */
+  margin: 3% 10%;
+}
+
+.main-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 2rem;
+    justify-content: center;
+    /* padding: 2rem; */
     width: 100%;
     gap: 3rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
