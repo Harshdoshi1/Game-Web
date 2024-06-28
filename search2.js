@@ -5,96 +5,102 @@ function toggleSearch(){
 }
 
 const Games = [
-    {
-        id: 0,
-        image: 'BGMIMOB.png',
-        title: 'bgmi',
-        
-    },
-    {
-        id: 1,
-        image: 'BRAWLSTARS.png',
-        title: 'brawl stars',
-        
-    },
-    {
-        id: 2,
-        image: 'CANDYCRUSH.png',
-        title: 'candy crush',
-        
-    },
-    {
-        id: 3,
-        image: 'CLASHROYAL.png',
-        title: 'clashh royal',
-        
-    },
-    {
-        id: 4,
-        image: 'FCMOBILE.png',
-        title: 'fc mobile',
-        
-    },
-    {
-        id: 5,
-        image: 'CODMMOB.png',
-        title: 'cod',
-        
-    },
-    {
-        id: 6,
-        image: 'GTAV.png',
-        title: 'gtav',
-        
-    },
-    {
-        id: 7,
-        image: 'GTASAN.png',
-        title: 'gta sanandreas',
-        
-    },
-    {
-        id: 8,
-        image: 'GTAVICE.png',
-        title: 'gta vice',
-        
-    },
-    {
-        id: 9,
-        image: 'SUBWAY.png',
-        title: 'subway surfers',
-        
-    },
-    {
-        id: 10,
-        image: 'FREEFIRE.png',
-        title: 'freefire',
-        
-    },
-    {
-        id: 11,
-        image: 'COC.png',
-        title: 'coc',
-        
-    },
     // {
-    //     id: 12,
-    //     image: 'VALOPC.png',
-    //     title: 'Valorant',
+    //     id: 0,
+    //     image: 'BGMIMOB.png',
+    //     title: 'bgmi',
         
     // },
     // {
-    //     id: 13,
-    //     image: 'MINECRAFT.png',
-    //     title: 'Minecraft',
+    //     id: 1,
+    //     image: 'BRAWLSTARS.png',
+    //     title: 'brawl stars',
         
     // },
     // {
-    //     id: 14,
-    //     image: 'FORZA4.png',
-    //     title: 'Forza 4',
+    //     id: 2,
+    //     image: 'CANDYCRUSH.png',
+    //     title: 'candy crush',
         
     // },
+    // {
+    //     id: 3,
+    //     image: 'CLASHROYAL.png',
+    //     title: 'clashh royal',
+        
+    // },
+    // {
+    //     id: 4,
+    //     image: 'FCMOBILE.png',
+    //     title: 'fc mobile',
+        
+    // },
+    // {
+    //     id: 5,
+    //     image: 'CODMMOB.png',
+    //     title: 'cod',
+        
+    // },
+    // {
+    //     id: 6,
+    //     image: 'GTAV.png',
+    //     title: 'gtav',
+        
+    // },
+    // {
+    //     id: 7,
+    //     image: 'GTASAN.png',
+    //     title: 'gta sanandreas',
+        
+    // },
+    // {
+    //     id: 8,
+    //     image: 'GTAVICE.png',
+    //     title: 'gta vice',
+        
+    // },
+    // {
+    //     id: 9,
+    //     image: 'SUBWAY.png',
+    //     title: 'subway surfers',
+        
+    // },
+    // {
+    //     id: 10,
+    //     image: 'FREEFIRE.png',
+    //     title: 'freefire',
+        
+    // },
+    // {
+    //     id: 11,
+    //     image: 'COC.png',
+    //     title: 'coc',
+        
+    // },
+    {
+        id: 12,
+        image: 'VALOPC.png',
+        title: 'Valorant',
+        
+    },
+    {
+        id: 13,
+        image: 'MINECRAFT.png',
+        title: 'Minecraft',
+        
+    },
+    {
+        id: 14,
+        image: 'FORZA4.png',
+        title: 'Forza 4',
+        
+    },
+    {
+        id: 15,
+        image: 'ANGRYBIRDS.png',
+        title: 'Angry Birds',
+        
+    },
 ];
 
 const categories = [...new Set(Games.map((item) => { return item }))]
