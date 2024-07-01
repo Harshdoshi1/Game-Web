@@ -214,3 +214,14 @@ main{
     }
   }
   
+.mysearch-icon{
+    color: white;
+    max-width: 3.5rem;
+}
+
+.myinput{
+    width: 20rem;
+    margin-left: 2rem;
+    height: 4rem;
+    border-radius: 10%;
+}

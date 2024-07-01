@@ -110,6 +110,7 @@ document.getElementById('search').addEventListener('keyup', (e) => {
     const filteredData = categories.filter((item) => {
         return (
             item.title.toLowerCase().includes(searchData)
+            sear
         )
     })
     displayItem(filteredData)

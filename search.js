@@ -101,6 +101,7 @@ const categories = [...new Set(Games.map((item) => { return item }))]
 
 document.getElementById('search').addEventListener('keyup', (e) => {
     const searchData = e.target.value.toLowerCase();
+    
     const filteredData = categories.filter((item) => {
         return (
             item.title.toLowerCase().includes(searchData)
