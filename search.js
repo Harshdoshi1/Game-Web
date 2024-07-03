@@ -140,3 +140,5 @@ const displayItem = (items) => {
     }).join('')
 };
 displayItem(categories);
+
+//
